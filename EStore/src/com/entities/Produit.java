@@ -3,16 +3,22 @@
  */
 package com.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 
 /**
  * @author moi
  *
  */
 @Entity
+@NamedQuery(name = "Produit.abcd",query = "From Produit p where p.categorie.libelle=?1")
 public class Produit {
 
 	@Id
@@ -24,6 +30,23 @@ public class Produit {
 	
 	@ManyToOne
 	Categorie categorie;
+	
+	@OneToMany(mappedBy = "produit")
+	List<Composant> composants=new ArrayList<Composant>();
+
+	/**
+	 * @return the composants
+	 */
+	public List<Composant> getComposants() {
+		return composants;
+	}
+
+	/**
+	 * @param composants the composants to set
+	 */
+	public void setComposants(List<Composant> composants) {
+		this.composants = composants;
+	}
 
 	/**
 	 * @return the id

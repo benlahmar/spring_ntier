@@ -13,7 +13,7 @@ public class MainTest {
 
 		IserviceCat	pm= (IserviceCat) ctx2.getBean("servicecat");
 		Categorie c=new Categorie();
-		c.setLibelle("accessoires");
+		c.setLibelle("alpha");
 		pm.AddCategorie(c);
 	}
 

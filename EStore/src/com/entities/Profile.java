@@ -5,16 +5,24 @@ package com.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  * @author moi
  *
  */
+@Entity
 public class Profile {
 
+	@Id
+	@GeneratedValue
 	Long id;
 	String nom,prenom,email;
 	
+	@OneToMany(mappedBy = "profile")
 	List<Account> accounts=new ArrayList<>();
 
 	/**

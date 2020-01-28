@@ -3,14 +3,23 @@
  */
 package com.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 /**
  * @author moi
  *
  */
+@Entity
 public class Account {
 
+	@Id
+	@GeneratedValue
 	Long id;
 	String login,password,role;
+	@ManyToOne
 	Profile profile;
 	/**
 	 * @return the id
