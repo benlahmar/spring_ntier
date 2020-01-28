@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.entities.dao;
+package com.entities.services;
 
 import java.util.List;
 
@@ -9,7 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.entities.Categorie;
 import com.entities.Produit;
-import com.entities.services.IserviceCat;
+import com.entities.dao.CatRepo;
+import com.entities.dao.ProduitRepo;
 
 /**
  * @author moi
