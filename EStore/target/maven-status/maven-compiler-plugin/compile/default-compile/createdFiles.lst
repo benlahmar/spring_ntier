@@ -1,0 +1,8 @@
+com\entities\dao\Main.class
+com\entities\Account.class
+com\entities\dao\AccountManager.class
+com\entities\dao\ProfileManagereTemplate.class
+com\entities\dao\IDao2.class
+com\entities\dao\ProfileManager.class
+com\entities\dao\IDao.class
+com\entities\Profile.class
