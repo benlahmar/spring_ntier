@@ -13,5 +13,6 @@ public class Bbbb {
 	public void add(Categorie c)
 	{
 		crepo.save(c);
+		
 	}
 }
