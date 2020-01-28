@@ -40,5 +40,5 @@
 
     <bean id="bb" class="com.entities.dao.Bbbb"></bean>
     
-    <bean id="servicecat" class="com.entities.dao.ServiceProduit"></bean>
+    <bean id="servicecat" class="com.entities.services.ServiceProduit"></bean>
 </beans>
