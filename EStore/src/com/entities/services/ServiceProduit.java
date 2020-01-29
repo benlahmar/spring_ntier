@@ -22,6 +22,7 @@ public class ServiceProduit implements IserviceCat{
 	@Autowired
 	CatRepo crepo;
 	
+	
 	@Autowired
 	ProduitRepo prepo;
 	
