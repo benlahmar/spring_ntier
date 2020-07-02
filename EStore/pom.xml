@@ -6,7 +6,7 @@
   <properties>
         <spring.version>4.2.4.RELEASE</spring.version>
         <hibernate.version>4.3.8.Final</hibernate.version>
-        <mysql.version>5.1.10</mysql.version>
+        <mysql.version>8.0.16</mysql.version>
         <junit-version>4.11</junit-version>
         
         <java.version>1.8</java.version>
